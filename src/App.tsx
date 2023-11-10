@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useState } from 'react';
 import AnimatedMessages from './shared/AnimatedText';
 import song from './assets/song.mp3';
 

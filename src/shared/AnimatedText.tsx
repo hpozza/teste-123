@@ -1,20 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import styled, { keyframes } from 'styled-components';
-
-const fadeInOut = keyframes`
-  0% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 1;
-  }
-  75% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-`;
+import  { useState, useEffect } from 'react';
+import styled from 'styled-components';
 
 const AnimatedMessage = styled.h1`
   font-size: 24px;
@@ -33,6 +18,7 @@ const AnimatedMessages = ({ messages }: any) => {
       } else {
         clearInterval(interval); // Stop the interval when the array reaches the end
         setDone(true);
+        console.log(done)
       }
     }, 3000); // Adjust the interval duration based on your needs
 
